@@ -1,6 +1,3 @@
-/* Open Coffee Bar — site interactions */
-
-// 1. Mobile navigation toggle
 var navToggle = document.getElementById('navToggle');
 var navLinks = document.getElementById('navLinks');
 if (navToggle && navLinks) {
@@ -8,7 +5,6 @@ if (navToggle && navLinks) {
     var open = navLinks.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
-  // Close the menu after tapping a link (mobile)
   navLinks.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', function () {
       navLinks.classList.remove('open');
@@ -17,11 +13,9 @@ if (navToggle && navLinks) {
   });
 }
 
-// 2. Current year in the footer
 var yearEl = document.getElementById('year');
 if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
 
-// 3. Contact form: simple validation + friendly confirmation
 var form = document.getElementById('contactForm');
 if (form) {
   form.addEventListener('submit', function (e) {
@@ -37,12 +31,11 @@ if (form) {
       return;
     }
     msg.style.color = '#6F4E37';
-    msg.textContent = 'Thanks, ' + name + '! Your message has been noted. We’ll be in touch soon. ☕';
+    msg.textContent = 'Thanks, ' + name + '! Your message has been noted. We will be in touch soon.';
     form.reset();
   });
 }
 
-// 4. Scroll-reveal animation for elements with .reveal
 var revealEls = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window && revealEls.length) {
   var io = new IntersectionObserver(function (entries) {
@@ -58,7 +51,6 @@ if ('IntersectionObserver' in window && revealEls.length) {
   revealEls.forEach(function (el) { el.classList.add('visible'); });
 }
 
-// 5. Back-to-top button
 var toTop = document.getElementById('toTop');
 if (toTop) {
   window.addEventListener('scroll', function () {
