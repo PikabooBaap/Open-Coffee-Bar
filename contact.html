@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Open Coffee Bar, Bharatpur</title>
+  <meta name="description" content="Visit Open Coffee Bar on NH 21, Bharatpur. Find directions, hours and contact details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="bean">&#9749;</span> Open Coffee Bar</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding:72px 0 80px;">
+    <div class="container">
+      <span class="eyebrow">Get in Touch</span>
+      <h1>Come Visit Us</h1>
+      <p>We're on NH 21, Bharatpur — drop by, call ahead, or send us a message.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <h2 style="text-align:left;">Find Us</h2>
+        <div class="info-row">
+          <div class="ico">&#128205;</div>
+          <div>
+            <h4>Address</h4>
+            <p>NH 21, Nagla Chandwari Road, Nagla Gopal Rural, Bharatpur, Rajasthan 321001</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="ico">&#128222;</div>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+910000000000">[ Add the café's phone number ]</a></p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="ico">&#128344;</div>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>[ Confirm with owner ] &mdash; e.g. Mon&ndash;Sun, 9:00 AM &ndash; 11:00 PM</p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="ico">&#127869;</div>
+          <div>
+            <h4>Order Online</h4>
+            <p>
+              <a href="https://www.zomato.com/bharatpur/open-coffee-bar-bharatpur-locality/order" target="_blank" rel="noopener">Zomato</a> &nbsp;&middot;&nbsp;
+              <a href="https://www.swiggy.com/city/bharatpur/open-coffee-bar-ghana-central-bharatpur-rest912456" target="_blank" rel="noopener">Swiggy</a>
+            </p>
+          </div>
+        </div>
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir//Open+Coffee+Bar,+NH+21,+Nagla+Gopal+Rural,+Rajasthan+321001/@27.1937731,77.5274446,15z" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+
+      <div class="reveal">
+        <h2 style="text-align:left;">Send a Message</h2>
+        <form id="contactForm" novalidate>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Riya Sharma" required>
+
+          <label for="email">Email or Phone</label>
+          <input type="text" id="email" name="email" placeholder="How can we reach you?" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Table for 4 this evening? A catering enquiry? Tell us here." required></textarea>
+
+          <button type="submit" class="btn btn-dark" style="margin-top:16px;">Send Message</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <h2 class="reveal" style="margin-bottom:24px;">Our Location</h2>
+      <iframe
+        class="map-embed reveal"
+        title="Open Coffee Bar location on Google Maps"
+        src="https://www.google.com/maps?q=27.1937731,77.5274446&amp;z=15&amp;output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand"><span class="bean">&#9749;</span> Open Coffee Bar</div>
+        <p>NH 21, Nagla Chandwari Road, Nagla Gopal, Bharatpur, Rajasthan 321001.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Order Online</h4>
+        <a href="https://www.zomato.com/bharatpur/open-coffee-bar-bharatpur-locality/order" target="_blank" rel="noopener">Zomato</a>
+        <a href="https://www.swiggy.com/city/bharatpur/open-coffee-bar-ghana-central-bharatpur-rest912456" target="_blank" rel="noopener">Swiggy</a>
+        <a href="https://maps.google.com/?q=Open+Coffee+Bar+Bharatpur" target="_blank" rel="noopener">Find us on Maps</a>
+      </div>
+    </div>
+    <div class="container copy">&copy; <span id="year">2026</span> Open Coffee Bar, Bharatpur. Website by Abhay Pratap Singh.</div>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top">&#8593;</button>
+  <script src="script.js"></script>
+</body>
+</html>
